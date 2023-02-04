@@ -3,4 +3,4 @@
 `ghq get git@github.com:FukeKazki/starship-config.git`
 
 2. starshipのデフォルトの位置にシンボリックリンクを貼る。
-`ln ~/Develop/github.com/FukeKazki/starship-config/starship.toml ~/.config/`
+`ln -s ~/Develop/github.com/FukeKazki/starship-config/starship.toml ~/.config/starship.toml`
