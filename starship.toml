@@ -1,16 +1,17 @@
+# (bg, fb)の組み合わせは▲が良い感じに隠れるように互いの色を指定してる
 format = """
-[](#9A348E)\
+[](#10998c)\
 $os\
 $username\
-[](bg:#DA627D fg:#9A348E)\
+[](bg:#481099 fg:#10998c)\
 $directory\
-[](fg:#DA627D bg:#FCA17D)\
+[](fg:#481099 bg:#99101d)\
 $git_branch\
 $git_status\
-[](fg:#FCA17D bg:#86BBD8)\
+[](fg:#99101d bg:#619910)\
 $golang\
 $nodejs\
-[](fg:#86BBD8 bg:#06969A)\
+[](fg:#619910 bg:#1c222d)\
 """
 # 右側に時刻を表示
 right_format="""
@@ -25,13 +26,13 @@ $time
 # and use the os module below
 [username]
 show_always = true
-style_user = "bg:#9A348E"
-style_root = "bg:#9A348E"
-format = '[$user ]($style)'
+style_user = "bg:#10998c"
+style_root = "bg:#10998c"
+format = '[ ](bg:#10998c fg:#DDED25)[$user ]($style)'
 disabled = false
 
 [directory]
-style = "bg:#DA627D"
+style = "bg:#481099"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -46,29 +47,29 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:#FCA17D"
+style = "bg:#99101d"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#FCA17D"
+style = "bg:#99101d"
 format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
 symbol = " "
-style = "bg:#86BBD8"
+style = "bg:#619910"
 format = '[ $symbol ($version) ]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:#86BBD8"
+style = "bg:#619910"
 format = '[ $symbol ($version) ]($style)'
 
 # 時刻の表示設定
 [time]
 disabled = false
 time_format = "%T" # Hour:Minute Format
-style = "bg:#33658A"
-format = '[ ♥ $time ]($style)'
+style = "bg:#105499"
+format = '[  $time ]($style)'
 
 
 
