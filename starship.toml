@@ -2,7 +2,7 @@
 format = """
 [](#10998c)\
 $os\
-$username\
+$custom\
 [](bg:#481099 fg:#10998c)\
 $directory\
 [](fg:#481099 bg:#99101d)\
@@ -71,3 +71,9 @@ time_format = "%T" # Hour:Minute Format
 style = "bg:#105499"
 format = '[ [󰀀](bold italic bg:#105499) $time ]($style)'
 
+# リポジトリの作者を表示
+[custom.author]
+command = 'git remote get-url origin | cut -d/ -f4'
+detect_folders=['.git']
+style = "bg:#10998c"
+format = '[  ](bg:#10998c fg:#ffffff)[$output ]($style)'
