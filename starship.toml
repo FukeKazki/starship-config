@@ -68,8 +68,8 @@ format = '[ $symbol ($version) ]($style)'
 [time]
 disabled = false
 time_format = "%T" # Hour:Minute Format
-style = "bg:#105499"
-format = '[ [󰀀](bold italic bg:#105499) $time ]($style)'
+style = "fg:#ffffff"
+format = '[ [󰀀 󰀂 󰀃 󰀄](bold italic) $time [󰀂](bold italic)]($style)'
 
 # リポジトリの作者を表示
 [custom.author]
