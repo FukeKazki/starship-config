@@ -11,11 +11,14 @@ $git_status\
 [](fg:#99101d bg:#619910)\
 $golang\
 $nodejs\
-[](fg:#619910 bg:#1c222d)\
+[](fg:#619910 bg:#1c222d)\
+\n[❯](fg:#619910 bg:#1c222d) \
 """
 # 右側に時刻を表示
 right_format="""
-$time
+[](#10998c)\
+$time\
+[](#10998c)
 """
 
 
@@ -35,7 +38,7 @@ disabled = false
 style = "bg:#481099"
 format = "[ $path ]($style)"
 truncation_length = 3
-truncation_symbol = "…/"
+# truncation_symbol = "…/"
 
 # Here is how you can shorten some long paths by text replacement
 # similar to mapped_locations in Oh My Posh:
@@ -68,8 +71,9 @@ format = '[ $symbol ($version) ]($style)'
 [time]
 disabled = false
 time_format = "%T" # Hour:Minute Format
-style = "fg:#ffffff"
-format = '[ [󰀀 󰀂 󰀃 󰀄](bold italic) $time [󰀂](bold italic)]($style)'
+style = "bg:#10998c"
+# format = '[ [󰀀 󰀂 󰀃 󰀄](bold italic) $time [󰀂](bold italic)]($style)'
+format = '[ $time]($style)'
 
 # リポジトリの作者を表示
 [custom.author]
