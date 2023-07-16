@@ -15,11 +15,11 @@ $nodejs\
 \n[❯](fg:#619910 bg:#1c222d) \
 """
 # 右側に時刻を表示
-right_format="""
-[](#10998c)\
-$time\
-[](#10998c)
-"""
+# right_format="""
+# [](#10998c)\
+# $time\
+# [](#10998c)
+# """
 
 
 # Disable the blank line at the start of the prompt
